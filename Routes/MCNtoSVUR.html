@@ -1,0 +1,207 @@
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>RBS - Shortest Path</title>
+        <!--[if lt IE 9]>
+                 <script src="theme/js/html5shiv.js"></script>
+        <![endif]--> 
+        <script type="text/JavaScript" src="script/rbsAjax.js"></script>
+        <script type="text/JavaScript" src="script/routeAjax.js"></script>
+        <script type="text/JavaScript" src="script/mapAjax.js"></script>
+        <script type="text/JavaScript" src="images/myfreetemplates.js"></script>
+        <script type="text/javascript" src="script/rbsValidation.js"></script>
+        <script type="text/javascript">
+            var timeCount = 1;
+            function changeColor() {
+                var msg = document.getElementById("offline");
+                if (msg != null) {
+                    if (timeCount == 1) {
+                        msg.style.color = "teal";
+                        timeCount = 0;
+                    } else {
+                        msg.style.color = "white";
+                        timeCount = 1
+                    }
+                }
+            }
+        </script>
+        <link href="theme/css/style.css" rel="stylesheet" type="text/css">
+        <link href="theme/images/favicon.png" rel="icon" sizes="32x32">
+    </head>
+    <body onload="setInterval('changeColor()', 1000);loadForm();">
+        
+<header>
+    <div class="title">
+        <h1>Rates Branch System</h1>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="/ShortPath/index.jsp">Home</a></li>
+            <li class="active"><a href="/ShortPath/ShortPath.jsp">Find Route</a></li>
+            <li><a href="/ShortPath/ZoneFront.jsp">View Data</a></li>
+            <li><a href="/ShortPath/RbsLogin.jsp">Login</a></li>
+        </ul>
+    </nav>
+    <nav id="navigation">
+        
+        <ul>
+            <li><a href="/ShortPath/ShortPath.jsp" title="Find the Shortest Path">Shortest Path</a></li>
+            <li><a href="/ShortPath/ViaShortPath.jsp" title="Find the Shortest Path using via Stations">Using via
+                    Junction</a></li>
+            <li><a href="/ShortPath/MultipleShortPath.jsp" title="Find the Muliple Routes">Multiple Routes</a></li>
+            <li><a href="/ShortPath/CommodityRationalRt.jsp" title="Find the Rational Routes">Rational Routes</a></li>
+            <li><a href="/ShortPath/ShortPathDate.jsp" title="Find the Route for Specific Date">Date Based Route</a></li>
+                
+            <li><a href="/ShortPath/AdvancedViaPath.jsp" title="Build the route - Junction by Junction">Build Route</a></li>
+            <li><a href="/ShortPath/UtsRoute.jsp" title="Find the UTS Route">UTS
+                    Route</a></li>
+                    
+        </ul>
+
+        
+    </nav>
+    
+</header>
+
+        
+            <div class="container bg-blue">
+                
+                <div class="page">
+                    <table class="main" align="center">
+                        <tbody><tr>
+                            <td>
+                                
+
+
+                        
+                        <br>
+                        <br>
+
+                        <a href="Map.jsp"><img border="0" src="RbsImage/viewMap.gif" width="120" height="24"></a>
+
+                        <br>
+                        <center>
+                            <div id="row0"></div><table id="routetbl" border="1" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th colspan="6" align="center">SHORTEST PATH - 1:
+                                            MCN - SVUR</th>
+                                            
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center"><b>STATION CODE</b></td>
+                                        <td width="282" align="center"><b>STATION NAME</b></td>
+                                        <td align="center" width="191">CUMULATIVE <b>DISTANCE</b></td>
+                                        <td align="center" width="191">INTER - DISTANCE</td>
+                                        <td align="center" width="185"><b>GAUGE TYPE</b></td>
+                                            
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+
+                                    <tr>
+
+                                        
+                                
+                                
+
+                                <td width="29">
+                                    <a id="link0" href="javascript:removeInterStation(0)"><img border="0" id="plus0" src="/ShortPath/RbsImage/minus.gif" width="25" height="25"></a>
+                                        
+                                </td>
+
+                                <td align="center" width="321">MCN
+                                </td>
+                                <td width="282" align="center"><b>  Mukundarayapuram
+                                             </b></td>
+                                <td align="center" width="191">0.0
+                                </td>
+                                <td align="center" width="191">
+                                    0
+                                </td>
+                                <td align="center" width="185">
+                                    
+                                </td>
+                                
+                                    
+                                
+                                </tr>
+                                
+
+                                    <tr style="background-color: white;"><td></td><td align="center">THL</td><td align="center">Tiruvalam</td><td align="center">5.1</td><td align="center">5.1</td><td align="center">S</td></tr><tr>
+
+                                        
+
+                                <td width="29">
+                                    
+                                </td>
+
+                                <td align="center" width="321">SVUR
+                                </td>
+                                <td width="282" align="center"><b>  Sevur
+                                             </b></td>
+                                <td align="center" width="191">11.13
+                                </td>
+                                <td align="center" width="191">
+                                    11.13
+                                    
+                                </td>
+                                <td align="center" width="185">
+                                     S 
+                                </td>
+                                
+                                    
+                                </tr>
+                                
+                                
+
+                                </tbody>
+                            </table>
+                        </center>
+                        <p><br>
+                        </p>
+
+                        <form action="/ShortPath/ApportionmentServlet" method="post" name="appForm"><input type="submit" name="showApp" value="SHOW APPORTIONMENT"> <input type="hidden" name="distance" value="coach">
+                            <input type="hidden" name="currentRecord" value="0">  <input type="hidden" name="PageName" value="ShortPath">
+                        </form>
+                        
+                                
+
+
+
+                        </td>
+                        <td></td>
+                        </tr>
+
+                    </tbody></table>
+
+                </div>
+
+                
+<div class="sub-footer">
+    
+    <script type="text/JavaScript">
+        function reportIssue() {
+        document.forms['ReportForm'].submit();
+        }
+    </script>
+    <form name="ReportForm" action="/ShortPath/NewIssues.jsp" method="post">
+         <input type="hidden" name="PageName" value="ShortPath"> 
+    </form>
+    <a class="rbsLink" href="javascript:reportIssue()">Report Software Issues</a>
+</div>
+
+
+
+            </div>
+            
+<footer>
+		<img src="theme/images/cris.gif" class="cris-logo">
+</footer>
+
+
+    
+
+</body>

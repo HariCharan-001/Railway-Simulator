@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21/"
+     xml:base="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAverageTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAverageTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDelay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDelay">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDriver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDriver">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasGeometry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasIncident">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNearestJunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNearestJunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasPlatforms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasPlatforms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasProtocol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasProtocol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasRunningTrack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasRunningTrack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSchedule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSchedule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrack"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSignalStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSignalStatus">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDelay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDelay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasLocation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Platform"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegmentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegmentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrainNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrainNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Amber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Amber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Broad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Broad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Closed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Closed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Geometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Green -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Green">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Incident"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Meter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Meter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Narrow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Narrow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Open -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Open">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Platform">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Schedule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasProtocol"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSignalStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasTrack"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Track"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#SignalStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Amber"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Green"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Red"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Standard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasPlatforms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Closed"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Open"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Track">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSegment"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Segment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasIncident"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasStatus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrackType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Broad"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Meter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Narrow"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Standard"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Train">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasDestination"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainName"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasOrigin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Station"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasSchedule"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Schedule"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainType"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#hasAverageTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TravelTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TrainType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TravelTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#TravelTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type1Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type1Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type2Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type2Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type3Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Type3Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yuvan/ontologies/2023/3/untitled-ontology-21#Protocol"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

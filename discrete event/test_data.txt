@@ -1,0 +1,17 @@
+Brindavan express :-
+('MAS', 'Mgr Chennai Ctr', 'First', '07.40', '0', '0')
+('AJJ', 'Arakkonam', '08.38', '08.40', '2', '69')
+('SBC', 'Ksr Bengaluru', '13.40', 'Last', '0', '362')
+
+Sapthagiri Express :-
+('MAS', 'Mgr Chennai Ctr', 'First', '06.25', '0', '0')
+('AJJ', 'Arakkonam', '07.33', '07.35', '2', '69')
+('TPTY', 'Tirupati', '09.40', 'Last', '0', '151')
+
+tpty - 2:03 (78km) - Ajj - 2:07 (69km) - MAS - Sapthagiri
+sbc - 4:33 (292km) - Ajj - 1:27 (69km) - MAS - Brindavan
+
+
+both stop at AJJ for 2 mins
+
+
